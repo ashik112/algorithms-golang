@@ -8,7 +8,7 @@ func doBinarySearch(array  []int, target int) int {
 	left := 0
 	right := len(array) - 1
 	for left<=right{
-		mid := int((left+right)/2)
+		mid := right+(left-right)/2
 		if array[mid]==target{
 			return mid
 		} else if target>array[mid] {
